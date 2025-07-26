@@ -13,7 +13,6 @@ This project aims to predict the prices of houses in Bengaluru using machine lea
 - [Project Structure](#project-structure)
 - [How to Run](#how-to-run)
 - [Screenshots](#screenshots)
-- [Author](#author)
 
 ---
 
@@ -80,7 +79,17 @@ bengaluru-house-price-prediction/
 ```bash
 git clone https://github.com/sumukhpshetty25/bengaluru-house-price-prediction.git
 cd bengaluru-house-price-prediction
-
+```
 2. **Install dependencies**:
 ```bash
 pip install -r requirements.txt
+```
+3. **Run the Streamlit app**:
+```bash
+cd streamlit_app
+streamlit run app.py
+```
+
+---
+
+## Screenshots
