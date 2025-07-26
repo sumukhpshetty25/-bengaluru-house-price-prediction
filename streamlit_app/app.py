@@ -18,9 +18,10 @@ columns_path = os.path.join(BASE_DIR, '..', 'data', 'columns.json')
 with open(model_path, 'rb') as f:
     model = pickle.load(f)
 
-# Load the columns JSON
+# Load columns
 with open(columns_path, 'r') as f:
     data_columns = json.load(f)['data_columns']
+    locations = [col for col in data_columns if col not in ['total_sqft', 'bath', 'bhk']]
 
 # Streamlit UI
 st.title("🏠 Bengaluru House Price Predictor")
