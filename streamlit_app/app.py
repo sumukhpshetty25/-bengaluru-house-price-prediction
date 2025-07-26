@@ -6,7 +6,7 @@ import json
 import numpy as np
 
 # Load model and columns
-with open('C:/Users/Sumukh P Shetty/Desktop/House_Price_Predict/model/model.kpl', 'rb') as f:
+with open('C:/Users/Sumukh P Shetty/Desktop/House_Price_Predict/model/model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 with open('C:/Users/Sumukh P Shetty/Desktop/House_Price_Predict/data/datacolumns.json', 'r') as f:
