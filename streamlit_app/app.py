@@ -1,7 +1,7 @@
 # streamlit_app/app.py
 
 import os
-import pandas ad pd
+import pandas as pd
 import streamlit as st
 import pickle
 import json
