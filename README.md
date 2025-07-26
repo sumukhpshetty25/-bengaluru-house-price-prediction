@@ -59,7 +59,7 @@ The real estate market in Bengaluru is diverse and complex. This project attempt
 ---
 
 ## 🧾 Project Structure
-'''
+```
 bengaluru-house-price-prediction/
 │
 ├── model/
@@ -68,4 +68,4 @@ bengaluru-house-price-prediction/
 │   └── app.py               ← Streamlit code
 ├── data/
 │   └── columns.json         ← Column names (for one-hot encoding)
-'''
+```
