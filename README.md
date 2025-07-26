@@ -66,7 +66,7 @@ bengaluru-house-price-prediction/
 ├── streamlit_app/
 │   └── app.py               ← Streamlit code
 ├── data/
-│  └── columns.json         ← Column names (for one-hot encoding)
+│  └── datacolumns.json         ← Column names (for one-hot encoding)
 ├──requirements.txt
 ```
 
