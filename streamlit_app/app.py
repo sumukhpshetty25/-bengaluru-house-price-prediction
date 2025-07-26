@@ -7,12 +7,9 @@ import pickle
 import json
 import numpy as np
 
-# Set base directory (directory where app.py is located)
-BASE_DIR = os.path.dirname(__file__)
-
 # Define relative paths to model and columns
-model_path = os.path.join(BASE_DIR, '..', 'model', 'model.pkl')
-columns_path = os.path.join(BASE_DIR, '..', 'data', 'columns.json')
+model_path = os.path.join('model', 'model.pkl')
+columns_path = os.path.join('data', 'columns.json')
 
 # Load the trained model
 with open(model_path, 'rb') as f:
