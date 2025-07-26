@@ -1,17 +1,26 @@
 # streamlit_app/app.py
 
+impory os
+import pandas ad pd
 import streamlit as st
 import pickle
 import json
 import numpy as np
 
-# Load model and columns
-with open('C:/Users/Sumukh P Shetty/Desktop/House_Price_Predict/model/model.pkl', 'rb') as f:
+# Set base directory (directory where app.py is located)
+BASE_DIR = os.path.dirname(__file__)
+
+# Define relative paths to model and columns
+model_path = os.path.join(BASE_DIR, '..', 'model', 'model.pkl')
+columns_path = os.path.join(BASE_DIR, '..', 'data', 'columns.json')
+
+# Load the trained model
+with open(model_path, 'rb') as f:
     model = pickle.load(f)
 
-with open('C:/Users/Sumukh P Shetty/Desktop/House_Price_Predict/data/datacolumns.json', 'r') as f:
+# Load the columns JSON
+with open(columns_path, 'r') as f:
     data_columns = json.load(f)['data_columns']
-    locations = [col for col in data_columns if col not in ['total_sqft', 'bath', 'bhk']]
 
 # Streamlit UI
 st.title("🏠 Bengaluru House Price Predictor")
