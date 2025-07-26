@@ -1,6 +1,6 @@
 # streamlit_app/app.py
 
-impory os
+import os
 import pandas ad pd
 import streamlit as st
 import pickle
