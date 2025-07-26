@@ -9,7 +9,7 @@ import numpy as np
 
 # Define relative paths to model and columns
 model_path = os.path.join('model', 'model.pkl')
-columns_path = os.path.join('data', 'columns.json')
+columns_path = os.path.join('data', 'datacolumns.json')
 
 # Load the trained model
 with open(model_path, 'rb') as f:
