@@ -61,7 +61,7 @@ The real estate market in Bengaluru is diverse and complex. This project attempt
 ## 🧾 Project Structure
 ```
 bengaluru-house-price-prediction/
-│
+├── Bengaluru_House.ipynb
 ├── model/
 │   └── model.pkl            ← Your trained model
 ├── streamlit_app/
@@ -69,3 +69,15 @@ bengaluru-house-price-prediction/
 ├── data/
 │   └── columns.json         ← Column names (for one-hot encoding)
 ```
+
+
+---
+
+## 🚀 How to Run Locally
+
+1. **Clone the repository**:
+
+```bash
+git clone https://github.com/sumukhpshetty25/bengaluru-house-price-prediction.git
+cd bengaluru-house-price-prediction
+
